@@ -52,10 +52,10 @@ class RepositoryTest {
         repo.add(book1);
         repo.add(book2);
         repo.add(book3);
-        repo.removeById(4);
+        repo.removeID(3);
 
         Product[] actual = repo.findAll();
-        Product[] expected = new Product[]{book1, book2, book3};
+        Product[] expected = new Product[]{book1, book2};
         Assertions.assertArrayEquals(actual, expected);
     }
 
