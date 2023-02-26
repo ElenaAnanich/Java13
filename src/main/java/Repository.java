@@ -16,7 +16,7 @@ public class Repository {
 
     public void removeById(int removeID) {
         Product removeProdukt = findById(removeID);
-        if (removeProdukt == null) ;
+        if (removeProdukt == null)
         throw new NotFoundException(removeID);
     }
 
