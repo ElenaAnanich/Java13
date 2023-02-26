@@ -21,19 +21,6 @@ public class Repository {
     }
 
 
-    public void removeID(int removeID) {
-        Product[] tmp = new Product[products.length - 1];
-
-        int index = 0;
-        for (Product product : products) {
-            if (product.getId() != removeID) {
-                tmp[index] = product;
-                index++;
-            }
-        }
-        products = tmp;
-    }
-
     public Product findById(int id) {
         for (Product product : products) {
             if (product.getId() == id) {
